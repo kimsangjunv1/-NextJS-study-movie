@@ -6,7 +6,6 @@ export default function Home() {
     <>
       <NavBar />
       <p>1차로 여기가 읽힘</p>
-      <Test />
     </>
   );
 }

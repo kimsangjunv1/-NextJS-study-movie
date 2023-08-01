@@ -45,6 +45,7 @@ export default function Home() {
   const [counter, setCounter] = useState(0);
   return (
     <>
+      <p>2차로 여기가 읽힘</p>
       <ReverseFlexBox>
         <BigTitle>상태 : {counter}</BigTitle>
         <FlexBox>
@@ -53,7 +54,7 @@ export default function Home() {
               setCounter((prev) => prev + 1);
             }}
           >
-            증가
+            플러스
           </BlueHoverButton>
           <RedHoverButton
             onClick={() => {
@@ -62,6 +63,13 @@ export default function Home() {
           >
             초기화
           </RedHoverButton>
+          <BlueHoverButton
+            onClick={() => {
+              setCounter((prev) => prev - 1);
+            }}
+          >
+            마이너스
+          </BlueHoverButton>
         </FlexBox>
       </ReverseFlexBox>
     </>
